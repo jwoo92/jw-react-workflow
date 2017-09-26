@@ -1,0 +1,33 @@
+// ------------------
+//  FONTS
+// ------------------
+
+// $primary: '<primary-font-regular>';
+// $primaryBold: '<primary-font-bold>';
+// $secondary: '<secondary-font-regular>';
+// $secondaryBold: '<secondary-font-bold>';
+
+// start demo use
+$primary: sans-serif;
+$primaryBold: sans-serif;
+$secondary: sans-serif;
+$secondaryBold: sans-serif;
+// end demo use
+
+// ------------------
+//  COLORS
+// ------------------
+
+@import 'style-guide/colors';
+
+// ------------------
+//  ANIMATIONS
+// ------------------
+
+@import 'style-guide/animations';
+
+// ------------------
+//  MISC
+// ------------------
+
+@import 'base/mixins';

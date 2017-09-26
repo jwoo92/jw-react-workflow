@@ -1,0 +1,45 @@
+@import '~sharedStyles/variables';
+
+// ------------------
+//  CONTENT
+// ------------------
+
+html, body, p, a, input, select, h1, h2, h3, h4, h5, h6 {
+  font-family: $primary;
+  font-weight: 400;
+  color: $primaryColor;
+}
+
+a {
+  transition: $dTransition;
+}
+
+html, body {
+  background: $bodyBG;
+}
+
+input, textarea, select {
+  font-family: $primary;
+  font-size: 16px;
+  background: $solidWhite;
+}
+
+// ------------------
+//  BREAKPOINTS
+// ------------------
+
+@media screen and (max-width: 960px) {
+
+}
+
+@media screen and (max-width: 680px) {
+
+}
+
+@media screen and (max-width: 580px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
