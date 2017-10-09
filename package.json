@@ -4,7 +4,7 @@
   "private": true,
   "description": "Personal workflow including React, React Router V4, Redux, Webpack 3+, Immutable, Flow, Jest, eslint, babel => es2015, Sass, Firebase hookup and a few other goodies...",
   "main": "index.js",
-  "license": "ISC",
+  "license": "MIT",
   "scripts": {
     "start": "yarn dev:start",
     "dev:start": "nodemon --watch webpack.config.babel.js --exec \"webpack-dev-server --progress\"",
