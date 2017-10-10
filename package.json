@@ -14,7 +14,7 @@
     "test": "yarn lint && flow && jest --coverage"
   },
   "engines": {
-    "yarn": "1.0.2"
+    "yarn": ">= 1.0.2"
   },
   "browserslist": [
     "> 1%"
