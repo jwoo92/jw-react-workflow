@@ -11,7 +11,7 @@
     "production": "rimraf lib dist && babel app -d lib --ignore .test.js && cross-env NODE_ENV=production webpack -p --progress",
     "prod:serve": "serve ./dist -s",
     "prod:ngrok": "npm-run-all ngrok prod:serve",
-    "ngrok": "ngrok http 5000",
+    "ngrok": "ngrok http 8000",
     "lint": "eslint app webpack.config.babel.js --ext .js,.jsx",
     "fix": "eslint app webpack.config.babel.js --ext .js,.jsx --fix",
     "test": "yarn lint && jest --coverage"
