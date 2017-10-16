@@ -1,4 +1,5 @@
 export MainContainer from './Main/MainContainer'
+export Async from './Async/Async'
 export ScrollToTopOnMount from './ScrollToTopOnMount/ScrollToTopOnMount'
 export HomeContainer from './Home/HomeContainer'
 export NavigationContainer from './Navigation/NavigationContainer'

@@ -12,7 +12,8 @@
     "ecmaFeatures": {
       "jsx": true,
       "experimentalObjectRestSpread": true
-    }
+    },
+    "allowImportExportEverywhere": true
   },
   "plugins": [
     "compat",
