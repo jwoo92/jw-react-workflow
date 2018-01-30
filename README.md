@@ -14,7 +14,7 @@ Personal workflow including React, React Router V4, Redux, Webpack 3+, Immutable
 
 #### Build production files
 
-    yarn prod:build
+    yarn build
 
 #### Lint javascript
 

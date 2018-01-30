@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types' // eslint-disable-line
 
 class Async extends Component {
-  constructor () {
+  constructor() {
     super()
     this.state = {
       AsyncComponent: null,
@@ -11,26 +11,26 @@ class Async extends Component {
 
   componentWillMount() {
     this.cancelUpdate = false
-    this.props.load()
-      .then((component) => {
-        this.setState({ AsyncComponent: component })
+    this.props.load().then((component) => {
+      this.setState({ AsyncComponent: component })
 
-        if (!this.cancelUpdate) {
-          this.forceUpdate()
-        }
+      if (!this.cancelUpdate) {
+        this.forceUpdate()
+      }
     })
   }
 
-  render () {
+  render() {
     const { AsyncComponent } = this.state
     const { placeholder } = this.props
 
-    return (AsyncComponent
-      ? AsyncComponent.default
-        ? <AsyncComponent.default {...placeholder} />
-        : <AsyncComponent {...placeholder} />
-      : null
-    )
+    return AsyncComponent ? (
+      AsyncComponent.default ? (
+        <AsyncComponent.default {...placeholder} />
+      ) : (
+        <AsyncComponent {...placeholder} />
+      )
+    ) : null
   }
 }
 
@@ -40,4 +40,3 @@ Async.propTypes = {
 }
 
 export default Async
-

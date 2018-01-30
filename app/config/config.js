@@ -1,1 +1,1 @@
-export const WDS_PORT = process.env.PORT || 8000
+export const WDS_PORT = process.env.PORT || 4000 // eslint-disable-line

@@ -1,12 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Navigation } from 'components'
 
-class NavigationContainer extends Component {
-  render () {
-    return (
-      <Navigation />
-    )
-  }
-}
+const NavigationContainer = () => <Navigation />
 
 export default NavigationContainer

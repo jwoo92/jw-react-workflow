@@ -1,12 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Hero } from 'components'
 
-class HeroContainer extends Component {
-  render () {
-    return (
-      <Hero />
-    )
-  }
-}
+const HeroContainer = () => <Hero />
 
 export default HeroContainer

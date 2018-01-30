@@ -4,24 +4,38 @@
 //  CONTENT
 // ------------------
 
-html, body, p, a, input, select, h1, h2, h3, h4, h5, h6 {
+html,
+body,
+p,
+a,
+input,
+select,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $primaryColor;
   font-family: $primary;
   font-weight: 400;
-  color: $primaryColor;
 }
 
 a {
   transition: $dTransition;
 }
 
-html, body {
+html,
+body {
   background: $bodyBG;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
+  background: $solidWhite;
   font-family: $primary;
   font-size: 16px;
-  background: $solidWhite;
 }
 
 // ------------------
@@ -29,17 +43,13 @@ input, textarea, select {
 // ------------------
 
 @media screen and (max-width: 960px) {
-
 }
 
 @media screen and (max-width: 680px) {
-
 }
 
 @media screen and (max-width: 580px) {
-
 }
 
 @media screen and (max-width: 480px) {
-
 }
