@@ -24,6 +24,14 @@ const PATHS = {
   build: path.resolve(__dirname, 'dist'),
 }
 
+const styles = [
+  {
+    loader: 'css-loader?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
+  },
+  { loader: 'postcss-loader', options: { plugins: [autoprefixer] } },
+  { loader: 'sass-loader' },
+]
+
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: `${PATHS.app}/index.ejs`,
   filename: 'index.html',
@@ -155,28 +163,16 @@ const base = {
         test: /\.scss$/,
         exclude: /node_modules/,
         use: isProduction
-          ? ExtractTextPlugin.extract({
-              fallback: 'style-loader',
-              use: [
-                'css-loader?importLoaders=1!sass-loader',
-                {
-                  loader: 'postcss-loader',
-                  options: {
-                    plugins: [
-                      autoprefixer(),
-                      pxtorem({
-                        rootValue: 16,
-                        propWhiteList: [],
-                        propList: ['font', 'font-size', 'line-height', 'letter-spacing'],
-                        selectorBlackList: ['pc'],
-                      }),
-                    ],
-                  },
-                },
-                'sass-loader',
-              ],
-            })
-          : ['style-loader', 'css-loader?importLoaders=1', 'sass-loader'],
+          ? ExtractTextPlugin.extract({ fallback: 'style-loader', use: styles })
+          : [
+              { loader: 'style-loader' },
+              {
+                loader:
+                  'css-loader?sourceMap&modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
+              },
+              { loader: 'postcss-loader', options: { plugins: [autoprefixer] } },
+              { loader: 'sass-loader' },
+            ],
       },
       {
         test: /\.(eot|ttf|woff|svg|woff(2)?)(\?[a-z0-9]+)?$/,
