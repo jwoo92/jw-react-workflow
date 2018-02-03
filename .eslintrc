@@ -1,11 +1,5 @@
 {
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "airbnb",
-    "prettier",
-    "prettier/react"
-  ],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "airbnb", "prettier", "prettier/react"],
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaversion": 6,
@@ -13,7 +7,7 @@
     "sourceType": "module",
     "allowImportExportEverywhere": true
   },
-  "plugins": ["compat", "flowtype", "react", "prettier"],
+  "plugins": ["compat", "react", "prettier"],
   "env": {
     "browser": true,
     "es6": true,
@@ -23,12 +17,7 @@
     "prettier/prettier": "error",
     "arrow-body-style": 0,
     "camelcase": 0,
-    "no-plusplus": [
-      "error",
-      {
-        "allowForLoopAfterthoughts": true
-      }
-    ],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
     "prefer-template": 0,
     "consistent-return": 0,
     "no-underscore-dangle": 0,
@@ -39,11 +28,7 @@
     "allow-parens": 0,
     "no-return-assign": 0,
     "no-unused-vars": "warn",
-    "object-curly-spacing": [
-      "error",
-      "always",
-      { "arraysInObjects": true, "objectsInObjects": true }
-    ],
+    "object-curly-spacing": ["error", "always", { "arraysInObjects": true, "objectsInObjects": true }],
     "new-cap": [2, { "capIsNew": false, "newIsCap": true }],
     "no-class-assign": 0,
     "no-nested-ternary": 0,

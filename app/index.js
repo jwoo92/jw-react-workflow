@@ -8,7 +8,6 @@ import { isProd } from 'helpers/utils'
 import * as reducers from 'redux/modules'
 import getRoutes from 'config/routes'
 
-import 'font-awesome/css/font-awesome.min.css'
 import 'sharedStyles/theme.scss'
 
 const composeEnhancers = (isProd ? null : window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose

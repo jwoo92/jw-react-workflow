@@ -1,6 +1,6 @@
 # jw-react-workflow
 
-Personal workflow including React, React Router V4, Redux, Webpack 3+, Immutable, Flow, Jest, eslint, babel => es2015, Sass, Firebase hookup and a few other goodies.
+Personal React Redux Boilerplate
 
 ## Installation and Setup
 
