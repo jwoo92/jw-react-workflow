@@ -16,6 +16,10 @@ Personal React Redux Boilerplate
 
     yarn build
 
+#### Serve production files
+
+    yarn serve
+
 #### Lint javascript
 
     yarn lint

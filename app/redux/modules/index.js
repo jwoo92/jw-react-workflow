@@ -1,1 +1,1 @@
-export Sample from './Sample'
+export app from './app'

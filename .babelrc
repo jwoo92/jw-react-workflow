@@ -1,7 +1,9 @@
 {
-  "presets": ["env", "stage-0", "react"],
+  "presets": ["env", "react"],
   "plugins": [
-    "transform-object-assign",
+    "transform-object-rest-spread",
+    "transform-export-extensions",
+    "syntax-dynamic-import",
     [
       "transform-runtime",
       {
@@ -15,7 +17,8 @@
       "presets": ["react-hmre"]
     },
     "production": {
-      "plugins": ["transform-react-remove-prop-types"]
+      "presets": ["stage-3"],
+      "plugins": ["transform-react-remove-prop-types", "transform-remove-console"]
     }
   }
 }

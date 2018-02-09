@@ -14,14 +14,14 @@
 //  BREAKPOINTS
 // ------------------
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: $bpMD) {
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: $bpSM) {
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: $bpXS) {
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: $bpMobile) {
 }
